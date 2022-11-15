@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_top_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="에브리타임"
+            android:textColor="#C62917"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/univ_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_name"
+            android:layout_marginTop="5dp"
+            android:text="서울여대"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/icon_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/univ_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_search" />
+
+        <ImageButton
+            android:id="@+id/icon_my"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/univ_name"
+            android:layout_toLeftOf = "@+id/icon_search"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_my" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/main_middle_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_top_tab"
+        android:layout_above="@+id/main_bottom_tab"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/main_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/main_middle_first_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_first_content1"
+                        android:layout_width="250dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box_round_line"
+                        android:padding="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_first_content1_main_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_study" />
+
+                        <TextView
+                            android:id="@+id/main_middle_first_content1_title"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/main_middle_first_content1_main_icon"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="교내 스터디 구하는 법을 알려드릴게요!"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/main_middle_first_content1_sub_title"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_first_content1_title"
+                            android:layout_alignLeft="@+id/main_middle_first_content1_title"
+                            android:layout_marginTop="3dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="우리 학교에는 어떤 스터디가 있는지 어쩌구"
+                            android:textColor="#FFCE22"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/main_middle_first_content1_plus_image"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/main_middle_first_content1_sub_title"
+                            android:layout_alignLeft="@+id/main_middle_first_content1_title"
+                            android:layout_marginTop="15dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/image_more" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_first_content2"
+                        android:layout_width="250dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/main_middle_first_content1"
+                        android:background="@drawable/box_round_line"
+                        android:padding="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_first_content2_main_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_checkbox" />
+
+                        <TextView
+                            android:id="@+id/main_middle_first_content2_title"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/main_middle_first_content2_main_icon"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="오늘의 할 일"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/main_middle_first_content2_sub_title"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_first_content2_title"
+                            android:layout_alignLeft="@+id/main_middle_first_content2_title"
+                            android:layout_marginTop="3dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="현재 날짜"
+                            android:textColor="#6CB0FF"
+                            android:textSize="13sp" />
+
+                        <ImageButton
+                            android:id="@+id/main_middle_first_content2_plus_image"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/main_middle_first_content2_sub_title"
+                            android:layout_alignLeft="@+id/main_middle_first_content2_title"
+                            android:layout_marginTop="15dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/image_more" />
+
+                        <ImageButton
+                            android:id="@+id/main_middle_first_content2_plus_image2"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/main_middle_first_content2_plus_image"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/main_middle_first_content2_plus_image"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/image_more" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/main_middle_second_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/main_middle_first_scroll">
+
+                <LinearLayout
+                    android:id="@+id/main_middle_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content1"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content1_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_lib" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content1_plus_image1"
+                            android:maxLines="2"
+                            android:text="학교 홈"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content2"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content2_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_date" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content2_plus_image1"
+                            android:maxLines="2"
+                            android:text="열람실 현황"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content3"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content3_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_web" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content3_plus_image1"
+                            android:maxLines="2"
+                            android:text="종정시"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content4"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content4_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_eclass" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content4_plus_image1"
+                            android:maxLines="2"
+                            android:text="e-Class"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content5"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content5_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_notice2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content5_plus_image1"
+                            android:maxLines="2"
+                            android:text="학사 공지"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content6"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content6_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_calender" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content6_plus_image1"
+                            android:maxLines="2"
+                            android:text="학사 일정"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content7"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content7_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_site" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content7_plus_image1"
+                            android:maxLines="2"
+                            android:text="도서관"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/main_middle_second_content8"
+                        android:layout_width="40dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageButton
+                            android:id="@+id/main_middle_second_content8_plus_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_mail" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_middle_second_content8_plus_image1"
+                            android:maxLines="2"
+                            android:text="웹메일"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/main_middle_third"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/main_middle_second_scroll"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_ad"
+                app:riv_corner_radius="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/main_middle_forth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:layout_below="@+id/main_middle_third"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/box_round_line">
+
+                <TextView
+                    android:id="@+id/main_middle_forth_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="즐겨찾는 게시판"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/main_middle_forth_plus"
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_alignBottom="@+id/main_middle_forth_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/image_plus" />
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_title"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box1"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box2_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box2_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box2_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box2_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box2_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box2"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box3_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box3_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box3_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box3_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box3_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box3"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box4_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box4_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box4_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box4_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box4_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box4"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box5_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box5_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box5_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box5_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box5_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box5"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box6_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box6_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box6_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box6_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box6_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box6"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box7_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box7_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box7_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box7_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box7_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box7"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box8_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box8_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box8_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box8_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box8_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box8"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box9_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box9_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box9_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box9_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box9_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_middle_forth_sub_box10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_middle_forth_sub_box9"
+                    android:layout_alignLeft="@+id/main_middle_forth_title"
+                    android:layout_alignRight="@+id/main_middle_forth_plus"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box10_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000게시판"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_middle_forth_sub_box10_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/main_middle_forth_sub_box10_new1"
+                        android:layout_toRightOf="@+id/main_middle_forth_sub_box10_title1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="가나다라마바사아자차카타파하가나다라마바사아자차카" />
+
+                    <ImageView
+                        android:id="@+id/main_middle_forth_sub_box10_new1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/main_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/icon_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_home" />
+
+        <ImageButton
+            android:id="@+id/icon_timetable"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/icon_home"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_timetable" />
+
+        <ImageButton
+            android:id="@+id/icon_board"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/icon_timetable"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_board" />
+
+
+        <ImageButton
+            android:id="@+id/icon_notice"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/icon_board"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_notice" />
+
+        <ImageButton
+            android:id="@+id/icon_campuspick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/icon_notice"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_campuspick" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
