@@ -1,10 +1,9 @@
-package com.android.solution2
+package com.android.solution3
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.viewpager2.widget.ViewPager2
-import com.android.solution2.databinding.ActivityMainBinding
+import androidx.fragment.app.Fragment
+import com.android.solution3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,22 +13,45 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_main)
         setContentView(binding.root)
 
-        var images: Array<Int> = arrayOf(R.drawable.dog1, R.drawable.dog2)
+        val bottomBar = binding.bottomBar
 
-        var itemAdpater = ItemAdapter(images)
+        bottomBar.setOnItemSelectedListener { item ->
+            changeFragment(
+                when (item.itemId) {
+                    R.id.first-> {
+                        HomeFragment()
+                    }
+                    R.id.second-> {
+                        SearchFragment()
+                    }
+                    R.id.third-> {
+                        ReelsFragment()
+                    }
+                    R.id.fourth -> {
+                        ShopFragment()
+                    }
+                    R.id.fifth -> {
+                        ProfileFragment()
+                    }
+                    else -> {
+                        HomeFragment()
+                    }
 
-        binding.viewPager2.adapter = itemAdpater
-        binding.viewPager2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-
-        binding.ViewPager2.adapter = itemAdpater
-        binding.ViewPager2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-
-        binding.shop.setOnClickListener {
-            val intent = Intent(this, ShopActivity::class.java)
-            startActivity(intent)
+                }
+            )
+            true
         }
-
+        bottomBar.selectedItemId = R.id.first
     }
+
+    private fun changeFragment(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.container, fragment)
+            .commit()
+    }
+
 }
