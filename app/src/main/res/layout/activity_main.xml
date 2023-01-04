@@ -47,7 +47,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/ibtn_weather"
+            android:id="@+id/ibtn_mood_temper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
@@ -66,7 +66,7 @@
             android:text="평균 기온:"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ibtn_weather"
+            app:layout_constraintStart_toEndOf="@+id/ibtn_mood_temper"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -80,7 +80,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_high_temper"
+            android:id="@+id/tv_max_temper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -91,34 +91,34 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_high_temper_num"
+            android:id="@+id/tv_max_temper_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_high_temper"
+            app:layout_constraintStart_toEndOf="@+id/tv_max_temper"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_low_temper"
+            android:id="@+id/tv_min_temper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="최저 기온"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_high_temper_num"
+            app:layout_constraintStart_toEndOf="@+id/tv_max_temper_num"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_low_temper_num"
+            android:id="@+id/tv_min_temper_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_low_temper"
+            app:layout_constraintStart_toEndOf="@+id/tv_min_temper"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
