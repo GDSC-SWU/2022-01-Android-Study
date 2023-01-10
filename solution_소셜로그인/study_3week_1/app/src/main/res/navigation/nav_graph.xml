@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@layout/fragment_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="org.techtown.myblog.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_one"
+        android:name="org.techtown.myblog.OneFragment"
+        android:label="OneFragment"
+        tools:layout="@layout/fragment_one"/>
+    <fragment
+        android:id="@+id/nav_two"
+        android:name="org.techtown.myblog.TwoFragment"
+        android:label="TwoFragment"
+        tools:layout="@layout/fragment_two"/>
+    <fragment
+        android:id="@+id/nav_three"
+        android:name="org.techtown.myblog.ThreeFragment"
+        android:label="ThreeFragment"
+        tools:layout="@layout/fragment_three"/>
+    <fragment
+        android:id="@+id/nav_four"
+        android:name="org.techtown.myblog.FourFragment"
+        android:label="FourFragment"
+        tools:layout="@layout/fragment_four"/>
+
+</navigation>
