@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyBlog</string>
+    <string name="kakao_app_key">14f44c3699b7be45106a04db46ce11de</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date1">2022.10.29</string>
+    <string name="date2">2022.10.21</string>
+    <string name="date3">2022.10.17</string>
+
+    <string name="reader1">32읽음</string>
+    <string name="reader2">17읽음</string>
+    <string name="reader3">11읽음</string>
+    <string name="title1">파이널리</string>
+    <string name="title2">피곤할땐 레몬사탕이지</string>
+    <string name="title3">웨더아웃사이드</string>
+    <string name="contents1">파이널리 시험 끝!! 증말 공부를...</string>
+    <string name="contents2">별일 없는 시험기간...</string>
+    <string name="contents3">요즘 날씨 너무 좋다 내가 두번째로 좋아하는..</string>
+    <string name="likenum1">3</string>
+    <string name="likenum2">2</string>
+    <string name="likenum3">0</string>
+    <string name="malballonnum1">1</string>
+    <string name="malballonnum2">2</string>
+    <string name="malballonnum3">0</string>
+    <string name="title4">밀린 일기 와장창</string>
+    <string name="reply">3</string>
+</resources>

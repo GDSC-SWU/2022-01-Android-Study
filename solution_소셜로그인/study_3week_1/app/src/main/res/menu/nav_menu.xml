@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_one"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/one_24"
+        android:title=""/>
+    <item
+        android:id="@+id/nav_two"
+        android:icon="@drawable/two_24"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/nav_three"
+        android:icon="@drawable/three_24"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/nav_four"
+        android:icon="@drawable/four_24"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/five_24"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title=""/>
+</menu>

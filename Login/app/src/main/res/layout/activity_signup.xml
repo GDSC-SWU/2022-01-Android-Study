@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="110.5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="14dp"
+            android:text="회원가입"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/write_id"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/id_boarder"
+        android:hint="아이디 입력(6-20자)"
+        android:paddingLeft="12dp"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/already_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="6dp"
+        android:text="이미 존재하는 아이디입니다"
+        android:textColor="#FF9624"
+        android:visibility="invisible"
+        android:textSize="9sp" />
+    <EditText
+        android:id="@+id/write_psw"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/id_boarder"
+        android:hint="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)"
+        android:paddingLeft="12dp"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/error_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="6dp"
+        android:text="20자 이내의 비밀번호를 입력해주세요"
+        android:visibility="invisible"
+        android:textColor="#FF9624"
+        android:textSize="9sp" />
+    <EditText
+        android:id="@+id/rewrite_psw"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/id_boarder"
+        android:hint="비밀번호 재입력"
+        android:paddingLeft="12dp"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/error2_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="6dp"
+        android:text="비밀번호가 일치하지 않습니다"
+        android:visibility="invisible"
+        android:textColor="#FF9624"
+        android:textSize="9sp" />
+    <EditText
+        android:id="@+id/write_mail"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/id_boarder"
+        android:hint="이메일 주소 입력"
+        android:paddingLeft="12dp"
+        android:textSize="12sp"
+        />
+    <EditText
+        android:id="@+id/write_birth"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/id_boarder"
+        android:hint="생년월일 8자 (ex. 20220202)"
+        android:paddingLeft="12dp"
+        android:textSize="12sp"
+        />
+    <EditText
+        android:id="@+id/write_phnum"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/id_boarder"
+        android:hint="휴대폰 번호 입력('-' 제외 11자리 입력)"
+        android:paddingLeft="12dp"
+        android:textSize="12sp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="139dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/disabeld"
+        android:text="회원가입"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

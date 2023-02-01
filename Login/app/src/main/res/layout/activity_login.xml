@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="53.65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/care_ever_1" />
+
+        <ImageView
+            android:layout_width="117dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20.35dp"
+            android:src="@drawable/care_letter" />
+
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/id_boarder"
+            android:hint="아이디"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/id_boarder"
+            android:hint="비밀번호"
+            android:paddingLeft="10dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:background="@drawable/checkbox"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp"
+                android:checked="true"
+                android:buttonTint="#FF9624"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/login_state"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/password"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/some_id"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_btn"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/sns_login"
+                android:layout_width="106dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="127dp"
+                android:layout_marginTop="73dp"
+                android:layout_marginRight="127dp"
+                android:src="@drawable/sns_login"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/some_id" />
+
+            <ImageView
+                android:id="@+id/kakao_login"
+                android:layout_width="37.5dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="96dp"
+                android:src="@drawable/kakao_logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sns_login" />
+
+            <ImageView
+                android:id="@+id/naver_login"
+                android:layout_width="37.5dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginTop="96dp"
+                android:src="@drawable/naver_logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sns_login" />
+
+            <ImageView
+                android:layout_width="36.67dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="228.33dp"
+                android:layout_marginTop="96dp"
+                android:layout_marginRight="95dp"
+                android:src="@drawable/google_logo"
+                app:layout_constraintHorizontal_bias="0.607"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sns_login" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="122dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="79dp"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/not_member" />
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/not_member" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
